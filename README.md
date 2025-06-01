@@ -1,40 +1,30 @@
-# Student-Registration-System-project
-Overview
-This Java-based Student Registration System allows managing students, courses, and their registrations.
-The system supports creating students (each with their own account), adding courses, registering students for courses, and viewing all registrations.
+# Student Registration System
 
-Features
-Add new students with associated user accounts
+This is a simple **Student Registration System** implemented in Java. It simulates the process of student account creation, course management, and registration for academic courses.
 
-Add new courses
+## Features
 
-Register students to courses
+- Register students with username and password
+- Create academic courses
+- Register students to courses
+- Display all current course registrations
 
-Display all student-course registrations
+## Project Structure
 
-Project Structure
-Account: Stores login credentials for students.
+The project contains the following Java classes:
 
-Student: Contains student information linked to an account.
+- **`Account`**: Represents a student’s login account with username and password.
+- **`Student`**: Contains student information and links to an `Account`.
+- **`Course`**: Represents an academic course with an ID and name.
+- **`Registration`**: Represents the registration of a student for a course.
+- **`RegistrationManager`**: Handles the storage and management of students, courses, and registrations.
+- **`StudentRegistrationSystem`**: Main class to demonstrate system functionality.
 
-Course: Represents course details.
+## How to Run
 
-Registration: Links a student to a course.
+1. Make sure you have **Java installed** on your system (Java 8 or higher).
+2. Save the code in a file named `StudentRegistrationSystem.java`.
+3. Compile the code using:
 
-RegistrationManager: Manages collections of students, courses, and registrations; provides registration functionality.
-
-How to Run
-Compile all Java files:
-
-bash
-Copy
-Edit
-javac *.java
-Run the main class:
-
-bash
-Copy
-Edit
-java StudentRegistrationSystem
-The program will create sample students, courses, register students for courses, and display registrations.
-
+   ```bash
+   javac StudentRegistrationSystem.java
